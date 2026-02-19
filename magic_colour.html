@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Magic Color Predictor 🎨</title>
+
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: Arial, sans-serif;
+            transition: background-color 0.5s ease;
+        }
+
+        .container {
+            background: rgba(255, 255, 255, 0.85);
+            padding: 30px 40px;
+            border-radius: 12px;
+            text-align: center;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+        }
+
+        h1 {
+            margin-bottom: 15px;
+        }
+
+        #colorCode {
+            font-size: 24px;
+            font-weight: bold;
+            margin: 15px 0;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            background-color: #222;
+            color: white;
+        }
+
+        button:hover {
+            opacity: 0.9;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>🎩 Magic Color Predictor</h1>
+        <p>Your lucky color is:</p>
+        <div id="colorCode">#FFFFFF</div>
+        <button onclick="generateColor()">Predict Color</button>
+    </div>
+
+    <script>
+        function generateColor() {
+            let hex = "#";
+            let characters = "0123456789ABCDEF";
+
+            for (let i = 0; i < 6; i++) {
+                hex += characters[Math.floor(Math.random() * 16)];
+            }
+
+            // Apply color to background
+            document.body.style.backgroundColor = hex;
+
+            // Show color code on screen
+            document.getElementById("colorCode").innerText = hex;
+        }
+
+        // Generate one color automatically when page loads
+        generateColor();
+    </script>
+
+</body>
+</html>
