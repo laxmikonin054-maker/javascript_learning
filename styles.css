@@ -1,0 +1,42 @@
+body {
+    background: #111;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding-top: 60px;
+    color: white;
+}
+
+.title {
+    margin-bottom: 20px;
+}
+
+.lamp-card {
+    background: #222;
+    width: 260px;
+    margin: auto;
+    padding: 25px;
+    border-radius: 16px;
+    box-shadow: 0 15px 25px rgba(0,0,0,0.5);
+}
+
+.lamp {
+    width: 120px;
+    height: 120px;
+    background: #444;
+    margin: 0 auto 15px;
+    border-radius: 50%;
+    box-shadow: 0 0 20px #000;
+}
+
+.mood-btn {
+    background: #ffcc00;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.mood-btn:hover {
+    background: #ffdd33;
+}
