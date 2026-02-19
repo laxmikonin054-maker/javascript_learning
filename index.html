@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive JS Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="card">
+            <div id="clock">00:00:00</div>
+            <p>Current Local Time</p>
+        </div>
+
+        <div class="card">
+            <h1>Welcome!</h1>
+            <input type="text" id="userName" placeholder="What's your name?">
+            <button onclick="sayHello()">Update Greeting</button>
+            <h2 id="greetingText">Hello, Guest!</h2>
+        </div>
+
+        <div class="card">
+            <p>Appearance</p>
+            <button class="toggle-btn" onclick="toggleTheme()">Switch Light/Dark Mode</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
